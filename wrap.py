@@ -5,3 +5,11 @@ def wrap_calc(func):
 
         return func(x, y)
     return result_func
+
+
+def wrap_message(func):
+    def result_func(text):
+        print("от Директора")
+        func(text)
+        print("Спасибо, что пишите нам")
+    return result_func
