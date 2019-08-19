@@ -18,7 +18,8 @@ def message(text):
     print(text)
 
 if __name__ == "__main__":
-    #print(render(4, 5))   
-    #print(datetime.datetime.today())
+    #print(render(4, 5)) 
+    #date = datetime.datetime.today()
+    #print(date.strftime("%d-%m-%Y %H:%M:%S"))
 
-    message("Здравствуйте, это декораторы")
+    message("Это декораторы.")

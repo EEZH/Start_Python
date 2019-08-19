@@ -11,8 +11,9 @@ def wrap_calc(func):
 
 def wrap_message(func):
     def result_func(text):
-        print("от Директора")
+        print("Добрый день!")
         func(text)
         print("Спасибо, что пишите нам")
-        print(datetime.datetime.today())
+        date = datetime.datetime.today()
+        print(date.strftime("%d-%m-%Y %H:%M:%S"))
     return result_func
