@@ -13,7 +13,7 @@ def wrap_message(func):
     def result_func(text):
         print("Добрый день!")
         func(text)
-        print("Спасибо, что пишите нам")
+        print("Спасибо, что пишите нам!")
         date = datetime.datetime.today()
-        print(date.strftime("%d-%m-%Y %H:%M:%S"))
+        print(date.strftime("%d-%m-%Y"))
     return result_func
